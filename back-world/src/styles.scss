@@ -99,7 +99,7 @@ $thirdFont: RifficFreeBold;
             padding: 3px;
             font-size: 1.3em;
             margin-right: 15px;
-            font-family: $secondFont;
+            font-family: $thirdFont;
             border: 3px solid $thirdColor;
             background-color: transparent;
             &:hover {
@@ -138,40 +138,116 @@ $thirdFont: RifficFreeBold;
     .destinations {
         padding-top: 10px;
         padding-bottom: 7px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/assets/picts/destinationsBackground.jpg');
         .choose {
+            letter-spacing: 3px;
+            color: $secondColor;
             margin-top: 15px;
             text-align: center;
             font-family: $thirdFont;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 0 $thirdColor, 2px -2px 0 $thirdColor, -2px 2px 0 $thirdColor, -2px -2px 0 $thirdColor, 2px 0px 0 $thirdColor, 0px 2px 0 $thirdColor, -2px 0px 0 $thirdColor, 0px -2px 0 $thirdColor;
         }
         .row {
             padding: 15px;
             margin: -15px auto;
-            margin-bottom: -20px;
+            margin-bottom: 25px;
             .col-lg-3 {
                 .img-fluid {
+                    cursor: pointer;
                     height: 310px;
                     max-width: 650px;
                     border-radius: 17px;
-                    border: 0px solid $secondColor;
+                    margin-top: 25px;
+                    border: 2px solid $thirdColor;
+                    transition: all 0.25ms ease;
                 }
-                .present {
+            }
+        }
+    }
+    .footer {
+        @include flex (row);
+        padding: 2px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $firstColor;
+        .copyrigth {
+            font-size: 1.4em;
+            margin-top: 17px;
+            margin-left: 10px;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            padding: 3px;
+            font-size: 1.3em;
+            margin-right: 15px;
+            font-family: $thirdFont;
+            border: 3px solid $thirdColor;
+            background-color: transparent;
+            &:hover {
+                color: $secondColor;
+                background-color: $thirdColor;
+            }
+        }
+    }
+}
+
+.countryContain {
+    
+    .head {
+        background-color: $firstColor;
+        .navbar {
+            @include flex (row);
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: space-between;
+            .navbar-brand {
+                .site {
                     cursor: pointer;
-                    opacity: 0.0;
-                    position: relative;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -760%);
-                    border: 0px solid $thirdColor;
-                    .name {
-                        text-align: center;
-                        font-size: 2.0em;
-                        color: $secondColor;
-                        font-family: $firstFont;
-                        text-shadow: 2px 2px 0 $firstColor, 2px -2px 0 $firstColor, -2px 2px 0 $firstColor, -2px -2px 0 $firstColor, 2px 0px 0 $firstColor, 0px 2px 0 $firstColor, -2px 0px 0 $firstColor, 0px -2px 0 $firstColor;
-                    }
-                    &:hover {
-                        opacity: 1.0;
+                    color: $secondColor;
+                    font-family: $firstFont;
+                }
+            }
+            .navbar-nav {
+                #btnLogIn {
+                    font-size: 1.5em;
+                    color: $secondColor;
+                    border: transparent;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .details {
+        background-color: rgb(124, 124, 124);
+        .row {
+            padding: 35px;
+            .col-lg-5 {
+                .img-fluid {
+                    height: 370px;
+                    max-width: 650px;
+                }
+            }
+        }
+        .listCity {
+            margin-top: -15px;
+            .choose {
+                font-size: 2.0em;
+                color: $secondColor;
+                text-align: center;
+                font-family: $firstFont;
+            }
+            .row {
+                margin-top: -20px;
+                .col-lg-4 {
+                    .img-fluid {
+                        height: 250px;
+                        max-width: 550px;
+                        border-radius: 40px;
+                        border: 1px solid $secondColor
                     }
                 }
             }
@@ -193,7 +269,7 @@ $thirdFont: RifficFreeBold;
             padding: 3px;
             font-size: 1.3em;
             margin-right: 15px;
-            font-family: $secondFont;
+            font-family: $thirdFont;
             border: 3px solid $thirdColor;
             background-color: transparent;
             &:hover {

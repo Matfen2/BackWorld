@@ -6,6 +6,8 @@ import { DestinationsPageComponent } from './destinations-page/destinations-page
 import { Routes, RouterModule } from '@angular/router';
 import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { CountryDirective } from './country.directive';
+import { CountryPageComponent } from './country-page/country-page.component';
 
 const routesPages : Routes = [
   {path: '', redirectTo: '/main-page', pathMatch: 'full'},
@@ -13,6 +15,7 @@ const routesPages : Routes = [
   {path: 'log-in-page', component: LogInPageComponent},
   {path: 'sign-up-page', component: SignUpPageComponent},
   {path: 'destination-page', component: DestinationsPageComponent},
+  {path: 'country-page/:id', component: CountryPageComponent},
 ]
 
 @NgModule({
@@ -20,7 +23,9 @@ const routesPages : Routes = [
     MainPageComponent,
     DestinationsPageComponent,
     LogInPageComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    CountryDirective,
+    CountryPageComponent
   ],
   imports: [
     FormsModule,

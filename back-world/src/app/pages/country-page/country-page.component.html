@@ -1,26 +1,42 @@
-<div class="destinationsContain">
-    <div class="head">
-        <nav class="navbar navbar-expand-lg">
-            <div class="navbar-brand">
-                <h2 class="site" [routerLink]="'/main-page'">BackWorld</h2>
+<div class="countryContain">
+        <div class="head">
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-brand">
+                    <h2 class="site" [routerLink]="'/main-page'">BackWorld</h2>
+                </div>
+                <div class="navbar-nav">
+                    <button type="button" id="btnLogIn"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                </div>
+            </nav>
+        </div>
+        <div class="details" *ngIf="countryDetails">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img [src]="countryDetails.pict" class="img-fluid w-100" alt="pictCountry" />
+                </div>
+                <div class="col-lg-7">
+                    <p>{{countryDetails.title}} situé en {{countryDetails.continent}}</p>
+                </div>
             </div>
-            <div class="navbar-nav">
-                <button type="button" id="btnLogIn"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
-            </div>
-        </nav>
-    </div>
-    <div class="destinations">
-        <h2 class="choose">CHOISSISEZ VOTRE DESTINATION :</h2>
-        <div class="row">
-            <div class="col-lg-3" *ngFor="let destination of destinations">
-                <img [src]="destination.image" [routerLink]="['/country-page', destination.id]" class="img-fluid w-100" alt="pictDestination" appCountry />
+            <div class="listCity">
+                <p class="choose">Quelle ville souhaitez-vous allez ?</p>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img [src]="countryDetails.firstCityPict" class="img-fluid w-100" alt="pictCityFirst" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img [src]="countryDetails.secondCityPict" class="img-fluid w-100" alt="pictCityFirst" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img [src]="countryDetails.thirdCityPict" class="img-fluid w-100" alt="pictCityFirst" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p class="copyrigth">© BackWorld</p>
-        <button type="button" id="btnContact" data-bs-toggle="modal" data-bs-target="#contact">CONTACT</button>
-    </div>
+        <div class="footer">
+            <p class="copyrigth">© BackWorld</p>
+            <button type="button" id="btnContact" data-bs-toggle="modal" data-bs-target="#contact">CONTACT</button>
+        </div>
 </div>
 
 <div class="modal fade" id="contact" aria-hidden="true" tabindex="-1">
