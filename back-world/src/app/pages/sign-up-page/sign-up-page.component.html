@@ -1,0 +1,48 @@
+<div class="inscribeContain">
+    <button type="button" id="btnClose" [routerLink]="'/main-page'"><i class="fas fa-times"></i></button>
+    <div class="cardInscribe">
+        <p class="signUp">INSCRIPTION :</p>
+        <div class="form-area">
+            <form #inscribe="ngForm" (ngSubmit)="showInscribe(inscribe)">
+                <div class="formGroupOne">
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" #pseudo="ngModel" [(ngModel)]="person.pseudo" minlength="10" [ngClass]="{'is.invalid': pseudo.invalid && pseudo.touched}" required />
+                        <div class="warning" *ngIf="pseudo.invalid && (pseudo.dirty || pseudo.touched)">
+                            <div class="alert alert-danger" *ngIf="pseudo.hasError('required')">Pseudo est requis</div>
+                            <div class="alert alert-danger" *ngIf="pseudo.hasError('minlength')">Pseudo doit contenir moins de 10 lettres</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label></label>
+                        <input type="email" name="email" class="form-control" placeholder="Adresse email" #email="ngModel" [(ngModel)]="person.email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" [ngClass]="{'is.invalid': email.invalid && email.touched}" required />
+                        <div class="warning" *ngIf="email.invalid && (email.dirty || email.touched)">
+                            <div class="alert alert-danger" *ngIf="email.hasError('required')">L'adresse email est requise</div>
+                            <div class="alert alert-danger" *ngIf="email.hasError('pattern')">L'adresse email n'est pas correcte</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formGroupTwo">
+                    <div class="form-group">
+                        <label></label>
+                        <input type="tel" name="phone" class="form-control" #phone="ngModel" placeholder="Numéro de Téléphone" [(ngModel)]="person.phone" pattern="[0-9]{10}" [ngClass]="{'is.invalid': phone.invalid && phone.touched}" required />
+                        <div class="warning" *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+                            <div class="alert alert-danger" *ngIf="phone.hasError('required')">Numéro de Téléphone est requis</div>
+                            <div class="alert alert-danger" *ngIf="phone.hasError('pattern')">Numéro de Téléphone incorrect</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label></label>
+                        <input type="password" name="password" class="form-control" placeholder="Mot de Passe" #password="ngModel" [(ngModel)]="person.password" minlength="15" [ngClass]="{'is.invalid': password.invalid && password.touched}" required />
+                        <div class="warning" *ngIf="password.invalid && (password.dirty || password.touched)">
+                            <div class="alert alert-danger" *ngIf="password.hasError('required')">Mot de Passe est requis</div>
+                            <div class="alert alert-danger" *ngIf="password.hasError('minlength')">Mot de Passe doit contenir moins de 15 lettres</div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="btnInscribe" [disabled]="inscribe.invalid">S'INSCRIRE</button>
+            </form>
+        </div>
+        <p class="hrefConnect">Vous êtes déjà inscrit ? <a href="#" [routerLink]="'/log-in-page'">Connectez-vous</a></p>
+    </div>
+</div>

@@ -174,6 +174,217 @@ body {
   background-color: black;
 }
 
+.connectContain {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/logInWallpaper.jpg");
+}
+.connectContain #btnClose {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: 2em;
+  color: black;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.connectContain #btnClose:hover {
+  color: azure;
+}
+.connectContain .cardConnect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  padding: 10px;
+}
+.connectContain .cardConnect .logIn {
+  color: azure;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: KGBlankSpaceSolid;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.connectContain .cardConnect .form-area {
+  margin-top: -35px;
+}
+.connectContain .cardConnect .form-area form .formGroupOne {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+}
+.connectContain .cardConnect .form-area form .formGroupOne input {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: RifficFreeBold;
+}
+.connectContain .cardConnect .form-area form #btnConnect {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  height: 42.5px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: RifficFreeBold;
+  color: azure;
+  letter-spacing: 1px;
+  background-color: darkgreen;
+}
+.connectContain .cardConnect .hrefInscribe {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: KGBlankSpaceSolid;
+  color: azure;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.connectContain .cardConnect .hrefInscribe a {
+  text-decoration: none;
+  color: azure;
+  transition: all 0.25ms ease;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.connectContain .cardConnect .hrefInscribe a:hover {
+  color: black;
+  text-shadow: 2px 2px 0 azure, 2px -2px 0 azure, -2px 2px 0 azure, -2px -2px 0 azure, 2px 0px 0 azure, 0px 2px 0 azure, -2px 0px 0 azure, 0px -2px 0 azure;
+}
+
+.inscribeContain {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/signUpWallaper.jpg");
+}
+.inscribeContain #btnClose {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: 2em;
+  color: black;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.inscribeContain #btnClose:hover {
+  color: azure;
+}
+.inscribeContain .cardInscribe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+}
+.inscribeContain .cardInscribe .signUp {
+  color: azure;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: KGBlankSpaceSolid;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.inscribeContain .cardInscribe .form-area {
+  margin: -30px auto;
+}
+.inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+}
+.inscribeContain .cardInscribe .form-area form .formGroupOne .form-group input, .inscribeContain .cardInscribe .form-area form .formGroupTwo .form-group input {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: RifficFreeBold;
+}
+.inscribeContain .cardInscribe .form-area form #btnInscribe {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  height: 42.5px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: RifficFreeBold;
+  color: azure;
+  letter-spacing: 2px;
+  background-color: darkgreen;
+}
+.inscribeContain .cardInscribe .hrefConnect {
+  margin-top: 40px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: KGBlankSpaceSolid;
+  color: azure;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.inscribeContain .cardInscribe .hrefConnect a {
+  text-decoration: none;
+  color: azure;
+  transition: all 0.25ms ease;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.inscribeContain .cardInscribe .hrefConnect a:hover {
+  color: black;
+  text-shadow: 2px 2px 0 azure, 2px -2px 0 azure, -2px 2px 0 azure, -2px -2px 0 azure, 2px 0px 0 azure, 0px 2px 0 azure, -2px 0px 0 azure, 0px -2px 0 azure;
+}
+
+#contact .modal-dialog .modal-content {
+  border-radius: 10px;
+  border: 0px solid cadetblue;
+  background-color: cadetblue;
+}
+#contact .modal-dialog .modal-content #btnCloseModal {
+  position: relative;
+  top: 9%;
+  left: 95%;
+  transform: translate(-50%, 0%);
+  color: azure;
+  font-size: 1.6em;
+  border: transparent;
+  background: transparent;
+}
+#contact .modal-dialog .modal-content .modal-body {
+  padding-bottom: 48px;
+  margin: -25px auto;
+}
+#contact .modal-dialog .modal-content .modal-body h2 {
+  letter-spacing: 3px;
+  font-size: 2.1em;
+  padding-top: 5px;
+  text-align: center;
+  font-family: RifficFreeBold;
+  color: azure;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+#contact .modal-dialog .modal-content .modal-body .form-area {
+  margin: -20px auto;
+}
+#contact .modal-dialog .modal-content .modal-body .form-area form .formGroupOne {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+#contact .modal-dialog .modal-content .modal-body .form-area form #btnSend {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: KGBlankSpaceSketch;
+  color: azure;
+  letter-spacing: 1px;
+  background-color: darkgreen;
+}
+
 @font-face {
   font-family: KGBlankSpaceSolid;
   src: url("/assets/fonts/KGBlankSpaceSolid.ttf");
@@ -185,4 +396,84 @@ body {
 @font-face {
   font-family: RifficFreeBold;
   src: url("/assets/fonts/RifficFreeBold.ttf");
+}
+@media screen and (max-width: 1024px) {
+  .mainContain .sentence {
+    height: 150px;
+  }
+  .mainContain .sentence .citation {
+    margin-top: -10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContain .sentence {
+    height: 150px;
+  }
+  .mainContain .sentence #btnDestination {
+    margin-top: 20px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainContain .sentence {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainContain .sentence #btnDestination {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+  }
+  .connectContain .cardConnect {
+    transform: translate(-50%, -50%);
+  }
+  .connectContain .cardConnect .logIn {
+    font-size: 1.6em;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne {
+    margin-top: 10px;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne input {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mainContain .sentence {
+    height: 360px;
+  }
+  .connectContain .cardConnect {
+    transform: translate(-50%, -50%);
+  }
+  .connectContain .cardConnect .logIn {
+    font-size: 1.6em;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    flex-direction: column;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne input {
+    width: 190px;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne .alert {
+    max-width: 190px;
+  }
+  .connectContain .cardConnect .form-area #btnConnect {
+    height: 55px;
+    min-width: 240px;
+  }
+  .connectContain .cardConnect .hrefInscribe {
+    margin-top: 20px;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 325px) {
+  .mainContain .sentence {
+    height: 390px;
+  }
 }/*# sourceMappingURL=styles.css.map */

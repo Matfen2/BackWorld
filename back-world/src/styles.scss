@@ -204,6 +204,233 @@ $thirdFont: RifficFreeBold;
     }
 }
 
+// LOG IN PAGE
+.connectContain {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/logInWallpaper.jpg');
+    #btnClose {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        font-size: 2.0em;
+        color: $thirdColor;
+        border: transparent;
+        background: transparent;
+        transition: all 0.25ms ease;
+        &:hover {
+            color: $secondColor;
+        }
+    }
+    .cardConnect {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 500px;
+        padding: 10px;
+
+        .logIn {
+            color: $secondColor;
+            font-size: 2.0em;
+            letter-spacing: 1px;
+            font-family: $firstFont;
+            text-align: center;
+            text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+
+        }
+        .form-area {
+            margin-top: -35px;
+            form {
+                .formGroupOne {
+                    display: flex;
+                    column-gap: 20px;
+                    flex-direction: row;
+                    input {
+                        font-size: 1.4em;
+                        letter-spacing: 2px;
+                        font-family: $thirdFont;
+                    }
+                }
+                #btnConnect {
+                    cursor: pointer;
+                    display: block;
+                    margin: 15px auto;
+                    height: 42.5px;
+                    border-radius: 10px;
+                    font-size: 1.5em;
+                    font-family: $thirdFont;
+                    color: $secondColor;
+                    letter-spacing: 1px;
+                    background-color: darkgreen;
+                }
+            }
+        }
+        .hrefInscribe {
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: $firstFont;
+            color: $secondColor;
+            text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+            a {
+                text-decoration: none;
+                color: $secondColor;
+                transition: all 0.25ms ease;
+                text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+                &:hover {
+                    color: $thirdColor;
+                    text-shadow: 2px 2px 0 $secondColor, 2px -2px 0 $secondColor, -2px 2px 0 $secondColor, -2px -2px 0 $secondColor, 2px 0px 0 $secondColor, 0px 2px 0 $secondColor, -2px 0px 0 $secondColor, 0px -2px 0 $secondColor;
+
+                }
+            }
+        }
+    }
+}
+
+// SIGN UP PAGE
+.inscribeContain {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/signUpWallaper.jpg');
+    #btnClose {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        font-size: 2.0em;
+        color: $thirdColor;
+        border: transparent;
+        background: transparent;
+        transition: all 0.25ms ease;
+        &:hover {
+            color: $secondColor;
+        }
+    }
+    .cardInscribe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1200px;
+        .signUp {
+            color: $secondColor;
+            font-size: 2.0em;
+            letter-spacing: 1px;
+            font-family: $firstFont;
+            text-align: center;
+            text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+
+        }
+        .form-area {
+            margin: -30px auto;
+            form {
+                .formGroupOne, .formGroupTwo {
+                    display: flex;
+                    column-gap: 20px;
+                    flex-direction: row;
+                    .form-group {
+                        input {
+                            font-size: 1.4em;
+                            letter-spacing: 2px;
+                            font-family: $thirdFont;
+                        }
+                    }
+                }
+                #btnInscribe {
+                    cursor: pointer;
+                    display: block;
+                    margin: 15px auto;
+                    height: 42.5px;
+                    border-radius: 10px;
+                    font-size: 1.5em;
+                    font-family: $thirdFont;
+                    color: $secondColor;
+                    letter-spacing: 2px;
+                    background-color: darkgreen;
+                }
+            }
+        }
+        .hrefConnect {
+            margin-top: 40px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: $firstFont;
+            color: $secondColor;
+            text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+            a {
+                text-decoration: none;
+                color: $secondColor;
+                transition: all 0.25ms ease;
+                text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+                &:hover {
+                    color: $thirdColor;
+                    text-shadow: 2px 2px 0 $secondColor, 2px -2px 0 $secondColor, -2px 2px 0 $secondColor, -2px -2px 0 $secondColor, 2px 0px 0 $secondColor, 0px 2px 0 $secondColor, -2px 0px 0 $secondColor, 0px -2px 0 $secondColor;
+
+                }
+            }
+        }
+    }
+}
+
+// MODAL CONTACT
+#contact {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 10px;
+            border: 0px solid $firstColor;
+            background-color: cadetblue;
+            #btnCloseModal {
+                position: relative;
+                top: 9%;
+                left: 95%;
+                transform: translate(-50%, 0%);
+                color: $secondColor;
+                font-size: 1.6em;
+                border: transparent;
+                background: transparent;
+            }
+            .modal-body {
+                padding-bottom: 48px;
+                margin: -25px auto;
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 2.1em;
+                    padding-top: 5px;
+                    text-align: center;
+                    font-family: $thirdFont;
+                    color: $secondColor;
+                    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+                }
+                .form-area {
+                    margin: -20px auto;
+                    form {
+                        .formGroupOne {
+                            column-gap: 30px;
+                            @include flex (row);
+                        }
+                        #btnSend {
+                            cursor: pointer;
+                            display: block;
+                            margin: 15px auto;
+                            border-radius: 10px;
+                            font-size: 1.5em;
+                            font-family: $secondFont;
+                            color: $secondColor;
+                            letter-spacing: 1px;
+                            background-color: darkgreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @font-face {
     font-family: $firstFont;
     src: url('/assets/fonts/KGBlankSpaceSolid.ttf');
@@ -217,4 +444,124 @@ $thirdFont: RifficFreeBold;
 @font-face {
     font-family: $thirdFont;
     src: url('/assets/fonts/RifficFreeBold.ttf');
+}
+
+@media screen and (max-width: 1024px) {
+    .mainContain {
+        .sentence {
+            height: 150px;
+            .citation {
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContain {
+        .sentence {
+            height: 150px;
+            #btnDestination {
+                margin-top: 20px;
+                height: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    // MAIN-PAGE
+    .mainContain {
+        .sentence {
+            height: 330px;
+            @include flex (column);
+            #btnDestination {
+                display: block;
+                margin: auto;
+                max-width: 150px;
+            }
+        }
+    }
+    // LOG IN PAGE
+    .connectContain {
+        .cardConnect {
+            transform: translate(-50%, -50%);
+            .logIn {
+                font-size: 1.6em;
+            }
+            .form-area {
+                form {
+                    .formGroupOne {
+                        margin-top: 10px;
+                        input {
+                            width: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    // MAIN-PAGE
+    .mainContain {
+        .sentence {
+            height: 360px;
+        }
+    }
+    // LOG IN PAGE
+    .connectContain {
+        .cardConnect {
+            transform: translate(-50%, -50%);
+            .logIn {
+                font-size: 1.6em;
+            }
+            .form-area {
+                form {
+                    .formGroupOne {
+                        display: flex;
+                        margin-top: 20px;
+                        margin-left: 30px;
+                        flex-direction: column;
+                        input {
+                            width: 190px;
+                        }
+                        .alert {
+                            max-width: 190px;
+                        }
+                    }
+                }
+                #btnConnect {
+                    height: 55px;
+                    min-width: 240px;
+                }
+            }
+            .hrefInscribe {
+                margin-top: 20px;
+            }
+        }
+    }
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        .cardInscribe {
+            .form-area {
+                form {
+                    .formGroupOne, .formGroupTwo {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    // MAIN-PAGE
+    .mainContain {
+        .sentence {
+            height: 390px;
+        }
+    }
 }

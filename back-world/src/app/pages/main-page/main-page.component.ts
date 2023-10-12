@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ContinentsService } from '../continents.service';
 
 @Component({
@@ -11,5 +12,15 @@ export class MainPageComponent {
 
   constructor(private continentsServices: ContinentsService) {
     this.listContinents = continentsServices.continents;
+  }
+
+  person = {
+    user: '',
+    email: '',
+    message: '',
+  };
+
+  showContact(value: NgForm) {
+    console.log(value);
   }
 }

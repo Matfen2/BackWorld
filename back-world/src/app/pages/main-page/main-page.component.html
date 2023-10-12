@@ -5,7 +5,7 @@
                 <h2 class="site" [routerLink]="'/main-page'">BackWorld</h2>
             </div>
             <div class="navbar-nav">
-                <button type="button" id="btnLogIn"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                <button type="button" id="btnLogIn" [routerLink]="'/log-in-page'"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
             </div>
         </nav>
     </div>
@@ -26,4 +26,46 @@
         <p class="copyrigth">© BackWorld</p>
         <button type="button" id="btnContact" data-bs-toggle="modal" data-bs-target="#contact">CONTACT</button>
     </div>
+</div>
+
+<div class="modal fade" id="contact" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+            <h2>CONTACTEZ-NOUS :</h2>
+            <div class="form-area">
+                <form #contact="ngForm" (ngSubmit)="showContact(contact)">
+                    <div class="formGroupOne">
+                        <div class="form-group">
+                            <label></label>
+                            <input type="text" name="user" #user="ngModel" class="form-control" placeholder="Nom d'utilsateur" [(ngModel)]="person.user" minlength="15" [ngClass]="{'is.invalid': user.touched && user.invalid}" required />
+                            <div class="warning" *ngIf="user.invalid && (user.dirty || user.touched)">
+                                <div class="alert alert-danger" *ngIf="user.hasError('required')">Pseudo est requis</div>
+                                <div class="alert alert-danger" *ngIf="user.hasError('minlength')">Pseudo doit contenir moins de 15 lettres</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <input type="email" name="email" class="form-control" placeholder="Adresse email" #email="ngModel" [(ngModel)]="person.email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" [ngClass]="{'is.invalid': email.invalid && email.touched}" required />
+                            <div class="warning" *ngIf="email.invalid && (email.dirty || email.touched)">
+                                <div class="alert alert-danger" *ngIf="email.hasError('required')">L'adresse email est requise</div>
+                                <div class="alert alert-danger" *ngIf="email.hasError('pattern')">L'adresse email n'est pas correcte</div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                        <label></label>
+                        <textarea name="message" placeholder="Message (limite 300 lettres)" #message="ngModel" class="form-control" [(ngModel)]="person.message" minlength="300" [ngClass]="{'is.invalid': message.touched && message.invalid}" cols="30" rows="10" required></textarea>
+                        <div class="warning" *ngIf="message.invalid && (message.dirty || message.touched)">
+                            <div class="alert alert-danger" *ngIf="message.hasError('required')">Le message est requis</div>
+                            <div class="alert alert-danger" *ngIf="message.hasError('minlength')">Le message doit contenir moins de 300 lettres</div>
+                        </div>
+                    </div>
+                    <button type="submit" id="btnSend" [disabled]="contact.invalid">ENVOYER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
 </div>

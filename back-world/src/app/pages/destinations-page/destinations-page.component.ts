@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-destinations-page',
   templateUrl: './destinations-page.component.html',
@@ -48,4 +48,14 @@ export class DestinationsPageComponent {
       name: 'ANGLETERRE',
     },
   ];
+
+  person = {
+    user: '',
+    email: '',
+    message: '',
+  };
+
+  showContact(value: NgForm) {
+    console.log(value);
+  }
 }
