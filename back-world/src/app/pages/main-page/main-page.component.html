@@ -1,0 +1,29 @@
+<div class="mainContain">
+    <div class="head">
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-brand">
+                <h2 class="site" [routerLink]="'/main-page'">BackWorld</h2>
+            </div>
+            <div class="navbar-nav">
+                <button type="button" id="btnLogIn"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="show">
+        <div id="continents" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" *ngFor="let continent of listContinents" data-bs-interval="10000">
+                    <img [src]="continent.pict" class="img-fluid d-block w-100" alt="pictContinent" />
+                </div>
+            </div>
+            <div class="sentence">
+                <p class="citation">"Le voyage est un remède à tous les maux du monde : que ce soit de découvrir de nouveaux paysages, de faire de nouvelles rencontres, de connaitre les cultures de chaque pays, etc"</p>
+                <button type="button" id="btnDestination" [routerLink]="'/destination-page'">VOIR LES DESTINATIONS</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copyrigth">© BackWorld</p>
+        <button type="button" id="btnContact" data-bs-toggle="modal" data-bs-target="#contact">CONTACT</button>
+    </div>
+</div>

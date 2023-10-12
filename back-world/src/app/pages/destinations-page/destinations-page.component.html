@@ -1,0 +1,27 @@
+<div class="destinationsContain">
+    <div class="head">
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-brand">
+                <h2 class="site" [routerLink]="'/main-page'">BackWorld</h2>
+            </div>
+            <div class="navbar-nav">
+                <button type="button" id="btnLogIn"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="destinations">
+        <h2 class="choose">CHOISSISEZ VOTRE DESTINATION :</h2>
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let destination of destinations">
+                <img [src]="destination.image" class="img-fluid w-100" alt="pictDestination" />
+                <div class="present">
+                    <div class="name">{{destination.name}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copyrigth">© BackWorld</p>
+        <button type="button" id="btnContact" data-bs-toggle="modal" data-bs-target="#contact">CONTACT</button>
+    </div>
+</div>

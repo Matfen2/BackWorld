@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: block;
+}
+
+// MIXIN & ROOT
+$firstColor: cadetblue;
+$secondColor: azure;
+$thirdColor: black;
+$firstFont : KGBlankSpaceSolid;
+$secondFont: KGBlankSpaceSketch;
+$thirdFont: RifficFreeBold;
+
+@mixin flex ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection
+}
+
+.mainContain {
+    .head {
+        background-color: $firstColor;
+        .navbar {
+            @include flex (row);
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: space-between;
+            .navbar-brand {
+                .site {
+                    cursor: pointer;
+                    color: $secondColor;
+                    font-family: $firstFont;
+                }
+            }
+            .navbar-nav {
+                #btnLogIn {
+                    font-size: 1.5em;
+                    color: $secondColor;
+                    border: transparent;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .show {
+        #continents {
+            .carousel-inner {
+                .carousel-item {
+                    .img-fluid {
+                        height: 770px;
+                    }
+                }
+            }
+        }
+    }
+    .sentence {  
+        padding: 15px;
+        height: 100px;
+        opacity: 0.6;
+        background-color: $thirdColor;
+        @include flex (row);
+        .citation {
+            text-align: center;
+            font-size: 1.4em;
+            color: $secondColor;
+            font-family: $secondFont;
+        }
+        #btnDestination {
+            width: 200px;
+            margin-right: 10px;
+            margin-left: 15px;
+            color: $secondColor;
+            font-family: $firstFont;
+            background-color: $firstColor;
+            border: 2px solid $secondColor;
+            transition: all 0.25ms ease;
+            &:hover {
+                transform: scale(1.1);
+                background-color: $thirdColor;
+            }
+        }
+    }
+    .footer {
+        @include flex (row);
+        padding: 2px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $firstColor;
+        .copyrigth {
+            font-size: 1.4em;
+            margin-top: 17px;
+            margin-left: 10px;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            padding: 3px;
+            font-size: 1.3em;
+            margin-right: 15px;
+            font-family: $secondFont;
+            border: 3px solid $thirdColor;
+            background-color: transparent;
+            &:hover {
+                color: $secondColor;
+                background-color: $thirdColor;
+            }
+        }
+    }
+}
+
+.destinationsContain {
+   .head {
+        background-color: $firstColor;
+        .navbar {
+            @include flex (row);
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: space-between;
+            .navbar-brand {
+                .site {
+                    cursor: pointer;
+                    color: $secondColor;
+                    font-family: $firstFont;
+                }
+            }
+            .navbar-nav {
+                #btnLogIn {
+                    font-size: 1.5em;
+                    color: $secondColor;
+                    border: transparent;
+                    background: transparent;
+                }
+            }
+        }
+    } 
+    .destinations {
+        padding-top: 10px;
+        padding-bottom: 7px;
+        .choose {
+            margin-top: 15px;
+            text-align: center;
+            font-family: $thirdFont;
+            margin-bottom: 20px;
+        }
+        .row {
+            padding: 15px;
+            margin: -15px auto;
+            margin-bottom: -20px;
+            .col-lg-3 {
+                .img-fluid {
+                    height: 310px;
+                    max-width: 650px;
+                    border-radius: 17px;
+                    border: 0px solid $secondColor;
+                }
+                .present {
+                    cursor: pointer;
+                    opacity: 0.0;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -760%);
+                    border: 0px solid $thirdColor;
+                    .name {
+                        text-align: center;
+                        font-size: 2.0em;
+                        color: $secondColor;
+                        font-family: $firstFont;
+                        text-shadow: 2px 2px 0 $firstColor, 2px -2px 0 $firstColor, -2px 2px 0 $firstColor, -2px -2px 0 $firstColor, 2px 0px 0 $firstColor, 0px 2px 0 $firstColor, -2px 0px 0 $firstColor, 0px -2px 0 $firstColor;
+                    }
+                    &:hover {
+                        opacity: 1.0;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        @include flex (row);
+        padding: 2px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $firstColor;
+        .copyrigth {
+            font-size: 1.4em;
+            margin-top: 17px;
+            margin-left: 10px;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            padding: 3px;
+            font-size: 1.3em;
+            margin-right: 15px;
+            font-family: $secondFont;
+            border: 3px solid $thirdColor;
+            background-color: transparent;
+            &:hover {
+                color: $secondColor;
+                background-color: $thirdColor;
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: $firstFont;
+    src: url('/assets/fonts/KGBlankSpaceSolid.ttf');
+}
+
+@font-face {
+    font-family: $secondFont;
+    src: url('/assets/fonts/KGBlankSpaceSketch.ttf');
+}
+
+@font-face {
+    font-family: $thirdFont;
+    src: url('/assets/fonts/RifficFreeBold.ttf');
+}

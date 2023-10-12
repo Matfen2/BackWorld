@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+.mainContain .head {
+  background-color: cadetblue;
+}
+.mainContain .head .navbar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.mainContain .head .navbar .navbar-brand .site {
+  cursor: pointer;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.mainContain .head .navbar .navbar-nav #btnLogIn {
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.mainContain .show #continents .carousel-inner .carousel-item .img-fluid {
+  height: 770px;
+}
+.mainContain .sentence {
+  padding: 15px;
+  height: 100px;
+  opacity: 0.6;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.mainContain .sentence .citation {
+  text-align: center;
+  font-size: 1.4em;
+  color: azure;
+  font-family: KGBlankSpaceSketch;
+}
+.mainContain .sentence #btnDestination {
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 15px;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+  background-color: cadetblue;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.mainContain .sentence #btnDestination:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+.mainContain .footer {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+.mainContain .footer .copyrigth {
+  font-size: 1.4em;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-family: KGBlankSpaceSolid;
+}
+.mainContain .footer #btnContact {
+  padding: 3px;
+  font-size: 1.3em;
+  margin-right: 15px;
+  font-family: KGBlankSpaceSketch;
+  border: 3px solid black;
+  background-color: transparent;
+}
+.mainContain .footer #btnContact:hover {
+  color: azure;
+  background-color: black;
+}
+
+.destinationsContain .head {
+  background-color: cadetblue;
+}
+.destinationsContain .head .navbar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.destinationsContain .head .navbar .navbar-brand .site {
+  cursor: pointer;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.destinationsContain .head .navbar .navbar-nav #btnLogIn {
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.destinationsContain .destinations {
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+.destinationsContain .destinations .choose {
+  margin-top: 15px;
+  text-align: center;
+  font-family: RifficFreeBold;
+  margin-bottom: 20px;
+}
+.destinationsContain .destinations .row {
+  padding: 15px;
+  margin: -15px auto;
+  margin-bottom: -20px;
+}
+.destinationsContain .destinations .row .col-lg-3 .img-fluid {
+  height: 310px;
+  max-width: 650px;
+  border-radius: 17px;
+  border: 0px solid azure;
+}
+.destinationsContain .destinations .row .col-lg-3 .present {
+  cursor: pointer;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -760%);
+  border: 0px solid black;
+}
+.destinationsContain .destinations .row .col-lg-3 .present .name {
+  text-align: center;
+  font-size: 2em;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+  text-shadow: 2px 2px 0 cadetblue, 2px -2px 0 cadetblue, -2px 2px 0 cadetblue, -2px -2px 0 cadetblue, 2px 0px 0 cadetblue, 0px 2px 0 cadetblue, -2px 0px 0 cadetblue, 0px -2px 0 cadetblue;
+}
+.destinationsContain .destinations .row .col-lg-3 .present:hover {
+  opacity: 1;
+}
+.destinationsContain .footer {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+.destinationsContain .footer .copyrigth {
+  font-size: 1.4em;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-family: KGBlankSpaceSolid;
+}
+.destinationsContain .footer #btnContact {
+  padding: 3px;
+  font-size: 1.3em;
+  margin-right: 15px;
+  font-family: KGBlankSpaceSketch;
+  border: 3px solid black;
+  background-color: transparent;
+}
+.destinationsContain .footer #btnContact:hover {
+  color: azure;
+  background-color: black;
+}
+
+@font-face {
+  font-family: KGBlankSpaceSolid;
+  src: url("/assets/fonts/KGBlankSpaceSolid.ttf");
+}
+@font-face {
+  font-family: KGBlankSpaceSketch;
+  src: url("/assets/fonts/KGBlankSpaceSketch.ttf");
+}
+@font-face {
+  font-family: RifficFreeBold;
+  src: url("/assets/fonts/RifficFreeBold.ttf");
+}/*# sourceMappingURL=styles.css.map */
