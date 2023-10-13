@@ -24,7 +24,7 @@ export class DestinationsPageComponent {
     },
     {
       id: 4,
-      image: '/assets/picts/city/norvege.jpeg',
+      image: '/assets/picts/city/norvège.jpg',
       name: 'NORVEGE',
     },
     {

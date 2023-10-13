@@ -60,9 +60,10 @@ body {
   background-color: black;
 }
 .mainContain .footer {
+  height: 57px;
   display: flex;
   flex-direction: row;
-  padding: 2px;
+  padding: 0px;
   align-items: center;
   justify-content: space-between;
   background-color: cadetblue;
@@ -139,9 +140,10 @@ body {
   transition: all 0.25ms ease;
 }
 .destinationsContain .footer {
+  height: 57px;
   display: flex;
   flex-direction: row;
-  padding: 2px;
+  padding: 0px;
   align-items: center;
   justify-content: space-between;
   background-color: cadetblue;
@@ -193,11 +195,27 @@ body {
   padding: 35px;
 }
 .countryContain .details .row .col-lg-5 .img-fluid {
-  height: 370px;
-  max-width: 650px;
+  height: 375px;
+  max-width: 750px;
+  border-radius: 10px;
+  border: 0px solid black;
+}
+.countryContain .details .row .col-lg-7 {
+  padding-top: 10px;
+}
+.countryContain .details .row .col-lg-7 .where {
+  font-size: 1.5em;
+  text-align: center;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.countryContain .details .row .col-lg-7 .describe {
+  font-size: 1.4em;
+  font-family: KGBlankSpaceSketch;
+  color: azure;
 }
 .countryContain .details .listCity {
-  margin-top: -15px;
+  margin-top: -20px;
 }
 .countryContain .details .listCity .choose {
   font-size: 2em;
@@ -207,17 +225,28 @@ body {
 }
 .countryContain .details .listCity .row {
   margin-top: -20px;
+  margin-bottom: -20px;
+  padding-bottom: -10px;
+}
+.countryContain .details .listCity .row .col-lg-4 {
+  margin-bottom: 30px;
 }
 .countryContain .details .listCity .row .col-lg-4 .img-fluid {
-  height: 250px;
+  cursor: pointer;
+  height: 300px;
+  opacity: 0.7;
   max-width: 550px;
   border-radius: 40px;
   border: 1px solid azure;
 }
+.countryContain .details .listCity .row .col-lg-4 .img-fluid:hover {
+  opacity: 1;
+}
 .countryContain .footer {
+  height: 57px;
   display: flex;
   flex-direction: row;
-  padding: 2px;
+  padding: 0px;
   align-items: center;
   justify-content: space-between;
   background-color: cadetblue;
@@ -464,12 +493,24 @@ body {
   font-family: RifficFreeBold;
   src: url("/assets/fonts/RifficFreeBold.ttf");
 }
+@media screen and (max-width: 1440px) {
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 460px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .mainContain .sentence {
     height: 150px;
   }
   .mainContain .sentence .citation {
     margin-top: -10px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 340px;
+  }
+  .countryContain .details .row .col-lg-7 .describe {
+    overflow: auto;
+    max-height: 250px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -479,6 +520,18 @@ body {
   .mainContain .sentence #btnDestination {
     margin-top: 20px;
     height: 70px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 440px;
+  }
+  .countryContain .details .row .col-lg-7 .describe {
+    overflow: auto;
+    text-align: center;
+    max-height: 250px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    margin: auto;
+    display: block;
   }
 }
 @media screen and (max-width: 425px) {
@@ -503,6 +556,22 @@ body {
   }
   .connectContain .cardConnect .form-area form .formGroupOne input {
     width: 190px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 440px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    margin: auto;
+    display: block;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .cityFirst {
+    left: 27%;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .citySecond {
+    left: 29%;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .cityThird {
+    left: 36%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -538,9 +607,30 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 440px;
+  }
+  .countryContain .details .listCity .choose {
+    font-size: 1.5em;
+    margin-bottom: -5px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    margin: auto;
+    display: block;
+  }
 }
 @media screen and (max-width: 325px) {
   .mainContain .sentence {
     height: 390px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 300px;
+  }
+  .countryContain .details .listCity .choose {
+    font-size: 1.6em;
+    margin-bottom: -5px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    height: 270px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -15,20 +15,23 @@
                     <img [src]="countryDetails.pict" class="img-fluid w-100" alt="pictCountry" />
                 </div>
                 <div class="col-lg-7">
-                    <p>{{countryDetails.title}} situé en {{countryDetails.continent}}</p>
+                    <p class="where">{{countryDetails.title}}</p>
+                    <div class="describe">
+                        <p>{{countryDetails.describe}}</p>
+                    </div>
                 </div>
             </div>
             <div class="listCity">
-                <p class="choose">Quelle ville souhaitez-vous allez ?</p>
+                <p class="choose">Quelle ville souhaiteriez-vous visiter ?</p>
                 <div class="row">
                     <div class="col-lg-4">
                         <img [src]="countryDetails.firstCityPict" class="img-fluid w-100" alt="pictCityFirst" />
                     </div>
                     <div class="col-lg-4">
-                        <img [src]="countryDetails.secondCityPict" class="img-fluid w-100" alt="pictCityFirst" />
+                        <img [src]="countryDetails.secondCityPict" class="img-fluid w-100" alt="pictCitySecond" />
                     </div>
                     <div class="col-lg-4">
-                        <img [src]="countryDetails.thirdCityPict" class="img-fluid w-100" alt="pictCityFirst" />
+                        <img [src]="countryDetails.thirdCityPict" class="img-fluid w-100" alt="pictCityThird" />
                     </div>
                 </div>
             </div>

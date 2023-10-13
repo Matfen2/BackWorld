@@ -84,8 +84,9 @@ $thirdFont: RifficFreeBold;
         }
     }
     .footer {
+        height: 57px;
         @include flex (row);
-        padding: 2px;
+        padding: 0px;
         align-items: center;
         justify-content: space-between;
         background-color: $firstColor;
@@ -169,8 +170,9 @@ $thirdFont: RifficFreeBold;
         }
     }
     .footer {
+        height: 57px;
         @include flex (row);
-        padding: 2px;
+        padding: 0px;
         align-items: center;
         justify-content: space-between;
         background-color: $firstColor;
@@ -196,7 +198,6 @@ $thirdFont: RifficFreeBold;
 }
 
 .countryContain {
-    
     .head {
         background-color: $firstColor;
         .navbar {
@@ -227,13 +228,30 @@ $thirdFont: RifficFreeBold;
             padding: 35px;
             .col-lg-5 {
                 .img-fluid {
-                    height: 370px;
-                    max-width: 650px;
+                    height: 375px;
+                    max-width: 750px;
+                    border-radius: 10px;
+                    border: 0px solid $thirdColor;
+                }
+            }
+            .col-lg-7 {
+                padding-top: 10px;
+                .where {
+                    font-size: 1.5em;
+                    text-align: center;
+                    color: $secondColor;
+                    font-family: $firstFont;
+                }
+                .describe {
+                    font-size: 1.4em;
+                    
+                    font-family: $secondFont;
+                    color: $secondColor;
                 }
             }
         }
         .listCity {
-            margin-top: -15px;
+            margin-top: -20px;
             .choose {
                 font-size: 2.0em;
                 color: $secondColor;
@@ -242,20 +260,29 @@ $thirdFont: RifficFreeBold;
             }
             .row {
                 margin-top: -20px;
+                margin-bottom: -20px;
+                padding-bottom: -10px;
                 .col-lg-4 {
+                    margin-bottom: 30px;
                     .img-fluid {
-                        height: 250px;
+                        cursor: pointer;
+                        height: 300px;
+                        opacity: 0.7;
                         max-width: 550px;
                         border-radius: 40px;
-                        border: 1px solid $secondColor
+                        border: 1px solid $secondColor;
+                        &:hover {
+                            opacity: 1.0;
+                        }
                     }
                 }
             }
         }
     }
     .footer {
+        height: 57px;
         @include flex (row);
-        padding: 2px;
+        padding: 0px;
         align-items: center;
         justify-content: space-between;
         background-color: $firstColor;
@@ -522,7 +549,23 @@ $thirdFont: RifficFreeBold;
     src: url('/assets/fonts/RifficFreeBold.ttf');
 }
 
+@media screen and (max-width: 1440px) {
+    // COUNTRY-PAGE
+    .countryContain {
+        .details {
+            .row {
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 460px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    // MAIN-PAGE
     .mainContain {
         .sentence {
             height: 150px;
@@ -531,15 +574,63 @@ $thirdFont: RifficFreeBold;
             }
         }
     }
+    // COUNTRY-PAGE
+    .countryContain {
+        .details {
+            .row {
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 340px;
+                    }
+                }
+                .col-lg-7 {
+                    .describe {
+                        overflow: auto;
+                        max-height: 250px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
+    // MAIN-PAGE
     .mainContain {
         .sentence {
             height: 150px;
             #btnDestination {
                 margin-top: 20px;
                 height: 70px;
+            }
+        }
+    }
+    // COUNTRY-PAGE
+    .countryContain {
+        .details {
+            .row {
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 440px;
+                    }
+                }
+                .col-lg-7 {
+                    .describe {
+                        overflow: auto;
+                        text-align: center;
+                        max-height: 250px;
+                    }
+                }
+            }
+            .listCity {
+                .row {
+                    .col-lg-4 {
+                        .img-fluid {
+                            margin: auto;
+                            display: block;
+                        }
+                    }
+                }
             }
         }
     }
@@ -571,6 +662,37 @@ $thirdFont: RifficFreeBold;
                         margin-top: 10px;
                         input {
                             width: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // COUNTRY-PAGE
+    .countryContain {
+        .details {
+            .row {
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 440px;
+                    }
+                }
+            }
+            .listCity {
+                .row {
+                    .col-lg-4 {
+                        .img-fluid {
+                            margin: auto;
+                            display: block;
+                        }
+                        .cityFirst {
+                            left: 27%;
+                        }
+                        .citySecond {
+                            left: 29%;
+                        }
+                        .cityThird {
+                            left: 36%;
                         }
                     }
                 }
@@ -631,6 +753,32 @@ $thirdFont: RifficFreeBold;
             }
         }
     }
+    // COUNTRY-PAGE
+    .countryContain {
+        .details {
+            .row {
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 440px;
+                    }
+                }
+            }
+            .listCity {
+                .choose {
+                    font-size: 1.5em;
+                    margin-bottom: -5px;
+                }
+                .row {
+                    .col-lg-4 {
+                        .img-fluid {
+                            margin: auto;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 325px) {
@@ -638,6 +786,31 @@ $thirdFont: RifficFreeBold;
     .mainContain {
         .sentence {
             height: 390px;
+        }
+    }
+    // COUNTRY-PAGE
+    .countryContain {
+        .details {
+            .row {
+                .col-lg-5 {
+                    .img-fluid {
+                        height: 300px;
+                    }
+                }
+            }
+            .listCity {
+                .choose {
+                    font-size: 1.6em;
+                    margin-bottom: -5px;
+                }
+                .row {
+                    .col-lg-4 {
+                        .img-fluid {
+                            height: 270px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
