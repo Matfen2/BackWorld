@@ -189,7 +189,12 @@ body {
   background: transparent;
 }
 .countryContain .details {
-  background-color: rgb(124, 124, 124);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  padding: 20px;
 }
 .countryContain .details .row {
   padding: 35px;
